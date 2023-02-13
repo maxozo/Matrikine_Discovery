@@ -34,6 +34,7 @@ def get_protein_protease_cleavage_sites(Gene):
     except IndexError:
         Position_of_Gene1 =pd.DataFrame()
     return Position_of_Gene1
+
 def process_peptides_matrix(input):
     import re
     protein_sequence = get_protein_sequence(The_protein_gene_name_to_search_for)
@@ -223,7 +224,6 @@ if __name__ == '__main__':
         Peptides=process_peptides_matrix(Protease_sites)
         new_column_same_sequences_bio_f = pd.DataFrame()
 
-
         #this part finds all the other sequences that contain this pattern
 
         if (len(Peptides) < 1):
@@ -270,8 +270,6 @@ if __name__ == '__main__':
                             else:
                                 a_list_with_ids_of_peptide_cotaining_proteins = a_list_with_ids_of_peptide_cotaining_proteins + [
                                     str(gene_peptide_domain)]
-
-
 
                     except:
                         pass
