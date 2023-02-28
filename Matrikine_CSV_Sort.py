@@ -74,8 +74,6 @@ def determine_if_peptide_is_cleaved(entry, peptide,a):
    #print total_string
     return total_string
 
-
-
 onlyfiles = [f for f in listdir("Exported_Peptides_grB/") if isfile(join("Exported_Peptides_grB/", f))]
 for filename in onlyfiles:
     a,b= (filename.split("."))
@@ -120,5 +118,3 @@ for filename in onlyfiles:
 
     #activate folowing to record 4mers and 5mers in gene individual files
     record_4mers_5mers()
-
-#F.close()

@@ -6,3 +6,8 @@ This repo contains code that takes as an input protein domains information, clea
 
 
 Project contributors: Matiss Ozols, Nathan Jariwala, Alex Eckersley, Michael Sherratt
+
+
+The files has been pre-prepeared. All the proteins reported in skin proteome n=2859 (https://www.manchesterproteome.manchester.ac.uk/#/Proteome ) were digested using Prosper algorythm - these results are commited in this repo: ./Recourses/Prosper.csv.gz
+
+We also extracted all the protein domains available and their positions to analyse whether particular peptide will be present in any active protein domains (./Recourses/Domains_Info.csv.gz).
