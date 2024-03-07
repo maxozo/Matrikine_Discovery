@@ -1,4 +1,4 @@
-# Matrikine_Discovery Pipeline
+# Matrikine Discovery Pipeline
 
 <p align="center">
   <img src="./images/Ozols_FINAL.jpg" width="60%"/>
