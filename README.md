@@ -5,14 +5,25 @@
 </p>
 
 
-This repo contains code that takes as an input protein domains information, cleavage site information, Uniprot data to combine and analyse the most potent matrikines. Code preforms peptide generation analysis based on Prosper outputs generated on stand by prosper run on Condor Manchester. The code also searches which other skin proteins according to MSP contain the particular peptide and in which domain. This is further used to derive 4mer and 5mer peptides used for testing in skin cosmetics by Sederma and WBA.
+### Repository Overview
 
-1) Manuscript has utilised prosper prediction depostited here:
+This repository hosts a collection of code designed for the comprehensive analysis of matrikines—specifically, peptides with potential applications in skin health and cosmetics. Utilizing a rich dataset that includes protein domain information, cleavage site data, and UniProt entries, our scripts perform detailed peptide generation and analysis. This process leverages output from the Prosper algorithm. The analysis not only identifies peptides derived from skin proteins but also determines their presence within specific protein domains as cataloged in the MSP database. The ultimate goal is to isolate 4mer and 5mer peptides for empirical testing as discussed in [manuscript](https://academic.oup.com/bjd/advance-article/doi/10.1093/bjd/ljae061/7610994?login=true).
 
+#### Key Components of the Analysis
 
-Project contributors: Matiss Ozols, Nathan Jariwala, Alex Eckersley, Michael Sherratt
+- **Peptide Generation**: Automated analysis based on Prosper algorithm outputs, focusing on peptides that may play a role in skin health.
+- **Protein Domain Search**: Identification of skin proteins and the domains that contain specific peptides of interest.
+- **Peptide Application**: Isolation of short peptides (4mer and 5mer) for subsequent testing in skincare products.
 
+### Manuscript Reference
 
-The files has been pre-prepeared. All the proteins reported in skin proteome n=2859 (https://www.manchesterproteome.manchester.ac.uk/#/Proteome ) were digested using Prosper algorythm - these results are commited in this repo: ./Recourses/Prosper.csv.gz
+The methodologies and predictions utilized in this project are detailed in a manuscript that leverages Prosper prediction data. This foundational work is accessible [here](https://academic.oup.com/bjd/advance-article/doi/10.1093/bjd/ljae061/7610994?login=true).
 
-We also extracted all the protein domains available and their positions to analyse whether particular peptide will be present in any active protein domains (./Recourses/Domains_Info.csv.gz).
+### Data Preparation
+
+Prepared files and datasets are integral to our analysis:
+
+- **Skin Proteome Analysis**: The skin proteome, encompassing 2,859 proteins listed in the [Manchester Proteome Database](https://www.manchesterproteome.manchester.ac.uk/#/Proteome), was analyzed using the Prosper algorithm. The resultant data are committed to this repository (`./Resources/Prosper.csv.gz`).
+- **Protein Domain Information**: Data on protein domains, including their positions, were meticulously extracted to assess the occurrence of specific peptides within active domains (`./Resources/Domains_Info.csv.gz`).
+
+This repository serves as a comprehensive resource for researchers and industry professionals interested in the intersection of bioinformatics and cosmetic science, providing tools and data for the advanced analysis of peptides in skin health applications.
